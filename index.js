@@ -61,7 +61,7 @@ function Daikin(log, config) {
 	//Characteristic.TargetHeatingCoolingState.AUTO = 3;
 	this.targetHeatingCoolingState = Characteristic.TargetHeatingCoolingState.AUTO;
 	
-	this.service = new Service.Thermostat(this.name);
+	this.service = new Service.HeaterCooler(this.name);
 }
 
 function convertDaikinToJSON(input) {
